@@ -2,6 +2,7 @@ pipeline{
 
     agent any
     tools{
+<<<<<<< HEAD
             jdk 'java25'
             maven 'maven'
         }
@@ -12,6 +13,18 @@ pipeline{
             steps{
 
              git "https://github.com/Chadagonda-Harshitha-Reddy/kube-jenkins-app.git"
+=======
+        jdk 'java25'
+        maven 'maven'
+    }
+    stages{
+
+        stage("checkout"){
+
+            steps{
+
+              git "https://github.com/Chadagonda-Harshitha-Reddy/kube-jenkins-app.git"
+>>>>>>> 335ddb0d3c4e0a4e7727b735d4cda5800ec8b39a
 
             }
 
@@ -26,7 +39,11 @@ pipeline{
             }
 
         }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 335ddb0d3c4e0a4e7727b735d4cda5800ec8b39a
          stage("package"){
 
             steps{
@@ -48,5 +65,11 @@ pipeline{
                }
 
         }
+<<<<<<< HEAD
 
 }
+=======
+ 
+}
+ 
+>>>>>>> 335ddb0d3c4e0a4e7727b735d4cda5800ec8b39a
