@@ -8,7 +8,7 @@ pipeline{
 
             steps{
 
-             bat "git clone https://github.com/Chadagonda-Harshitha-Reddy/kube-jenkins-app.git"
+              git "https://github.com/Chadagonda-Harshitha-Reddy/kube-jenkins-app.git"
 
             }
 
